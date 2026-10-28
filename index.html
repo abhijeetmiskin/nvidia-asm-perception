@@ -70,7 +70,7 @@
                 <a href="#innovation" class="hover:text-nvgreen transition-colors">Token Caching</a>
                 <a href="#benchmarks" class="hover:text-nvgreen transition-colors">Benchmarks</a>
                 <a href="#visuals" class="hover:text-nvgreen transition-colors">Gallery</a>
-                <a href="#resume" class="hover:text-nvgreen transition-colors">Resume & STAR</a>
+                <a href="#commands" class="hover:text-nvgreen transition-colors">Quickstart</a>
             </div>
 
             <div class="flex items-center space-x-3">
@@ -143,8 +143,8 @@
                 <a href="#benchmarks" class="px-6 py-3 rounded-lg bg-gray-800 text-white font-medium hover:bg-gray-700 transition-all border border-gray-700 flex items-center">
                     <i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i> View Hardware Benchmarks
                 </a>
-                <a href="#resume" class="px-6 py-3 rounded-lg bg-cardbg text-gray-300 font-medium hover:text-white transition-all border border-gray-800 flex items-center">
-                    <i data-lucide="award" class="w-5 h-5 mr-2"></i> Resume & Interview Talking Points
+                <a href="#commands" class="px-6 py-3 rounded-lg bg-cardbg text-gray-300 font-medium hover:text-white transition-all border border-gray-800 flex items-center">
+                    <i data-lucide="terminal" class="w-5 h-5 mr-2"></i> Quickstart & Execution
                 </a>
             </div>
         </div>
@@ -567,70 +567,8 @@
         </div>
     </section>
 
-    <!-- Section 6: Resume & Interview Talking Points (STAR Method) -->
-    <section id="resume" class="py-20 border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-nvgreen">Recruiter & Interview Ready</h2>
-                <h3 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">Resume Bullets & Interview Guide</h3>
-                <p class="mt-4 text-gray-400">
-                    Pre-packaged impact statements and STAR-method responses tailored for Autonomous Driving, Computer Vision, and Systems Engineering roles.
-                </p>
-            </div>
-
-            <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Resume Bullets Card -->
-                <div class="bg-cardbg border border-gray-800 rounded-xl p-6">
-                    <div class="flex items-center justify-between mb-4">
-                        <h4 class="text-lg font-bold text-white flex items-center">
-                            <i data-lucide="file-badge" class="w-5 h-5 text-nvgreen mr-2"></i> Tailored Resume Bullets
-                        </h4>
-                        <button onclick="copyResumeBullets()" class="px-3 py-1 bg-gray-800 hover:bg-gray-700 text-xs text-gray-300 rounded flex items-center transition-all">
-                            <i data-lucide="copy" class="w-3.5 h-3.5 mr-1"></i> Copy
-                        </button>
-                    </div>
-                    <div id="resume-text" class="space-y-3 text-sm text-gray-300 font-sans leading-relaxed">
-                        <div class="p-3 bg-gray-900/80 rounded border border-gray-800">
-                            &bull; Engineered a motion-aware spatial token caching and GPU patch gating engine for DINOv2 Vision Transformer, reducing redundant self-attention computation in parked automotive surveillance mode.
-                        </div>
-                        <div class="p-3 bg-gray-900/80 rounded border border-gray-800">
-                            &bull; Cut per-frame token evaluation by <strong>70.9%</strong> (2,026 &rarr; 590 tokens) and accelerated video processing throughput by <strong>6.55×</strong> on <strong>NVIDIA RTX PRO 4000 Blackwell</strong> (24GB VRAM).
-                        </div>
-                        <div class="p-3 bg-gray-900/80 rounded border border-gray-800">
-                            &bull; Architected a zero-copy GPU feature buffer refilling hidden layers [3, 6, 9, 12], preserving <strong>98.6% bounding box IoU</strong> on pre-trained YOLO26s without modifying weights or requiring retraining.
-                        </div>
-                        <div class="p-3 bg-gray-900/80 rounded border border-gray-800">
-                            &bull; Validated fidelity against DARPA/Kitware VIRAT video benchmarks and real 5 FPS continuous sentry streams under the mentorship of NVIDIA Principal Engineers.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Interview STAR Method Card -->
-                <div class="bg-cardbg border border-gray-800 rounded-xl p-6">
-                    <h4 class="text-lg font-bold text-white flex items-center mb-4">
-                        <i data-lucide="message-square" class="w-5 h-5 text-blue-400 mr-2"></i> The 60-Second Interview Pitch
-                    </h4>
-                    <div class="space-y-3 text-sm text-gray-300 leading-relaxed">
-                        <div class="border-l-2 border-nvgreen pl-3">
-                            <strong class="text-white">Situation:</strong> Parked autonomous vehicles need 360° surveillance, but running Vision Transformers at 5 FPS drains the 12V battery and overheats the compute node.
-                        </div>
-                        <div class="border-l-2 border-blue-400 pl-3">
-                            <strong class="text-white">Task:</strong> Accelerate perception without degrading detection accuracy or requiring expensive multi-task re-training across all cameras.
-                        </div>
-                        <div class="border-l-2 border-purple-400 pl-3">
-                            <strong class="text-white">Action:</strong> I observed that 92%+ of the scene was static background. I implemented a sub-0.05ms GPU frame-difference gate and a hidden-state cache buffer that only evaluates dynamic patches while seamlessly refilling downstream feature pyramids.
-                        </div>
-                        <div class="border-l-2 border-amber-400 pl-3">
-                            <strong class="text-white">Result:</strong> Achieved a 6.55× speedup and 70.9% token reduction on NVIDIA Blackwell hardware, while maintaining 98.6% box IoU fidelity with zero weight retraining.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 7: Reproduction & Commands -->
-    <section class="py-20 border-b border-gray-800 bg-gray-950/40">
+    <!-- Section 6: Reproduction & Commands -->
+    <section id="commands" class="py-20 border-b border-gray-800 bg-gray-950/40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-nvgreen">Execution & Reproduction</h2>
@@ -712,16 +650,6 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
         });
-
-        function copyResumeBullets() {
-            const bullets = `• Engineered a motion-aware spatial token caching and GPU patch gating engine for DINOv2 Vision Transformer, reducing redundant self-attention computation in parked automotive surveillance mode (ASM).
-• Cut per-frame token evaluation by 70.9% (2,026 to 590 tokens) and accelerated video processing throughput by 6.55× on NVIDIA RTX PRO 4000 Blackwell (24GB VRAM).
-• Architected a zero-copy GPU feature buffer refilling hidden layers [3, 6, 9, 12], preserving 98.6% bounding box IoU on pre-trained YOLO26s without modifying weights or requiring retraining.
-• Validated fidelity against DARPA/Kitware VIRAT video benchmarks and real 5 FPS continuous sentry streams under the mentorship of NVIDIA Principal Engineers.`;
-            navigator.clipboard.writeText(bullets).then(() => {
-                alert('Resume bullets copied to clipboard!');
-            });
-        }
     </script>
 </body>
 </html>
