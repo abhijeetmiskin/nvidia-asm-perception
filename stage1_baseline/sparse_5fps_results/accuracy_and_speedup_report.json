@@ -1,0 +1,48 @@
+{
+  "evaluation_summary": {
+    "total_frames": 50,
+    "mean_box_iou_matched": 0.9676,
+    "precision_vs_golden": 0.9323,
+    "recall_vs_golden": 0.8953,
+    "f1_score": 0.9134,
+    "action_match": true,
+    "gt_action": "playing badminton",
+    "sparse_action": "playing badminton"
+  },
+  "speedup_metrics": {
+    "backbone_baseline_ms_per_frame": 129.31,
+    "backbone_sparse_ms_per_frame": 64.71,
+    "backbone_speedup_x": 2.0,
+    "pipeline_baseline_fps": 5.77,
+    "pipeline_sparse_fps": 10.38,
+    "pipeline_speedup_x": 1.8,
+    "fps_increase_pct": 79.9,
+    "vram_baseline_mb": 4157.37,
+    "vram_sparse_mb": 2423.15,
+    "vram_reduction_pct": 41.7
+  },
+  "token_reduction_metrics": {
+    "total_tokens_per_frame": 2026,
+    "mean_active_tokens": 876.4,
+    "mean_active_percentage": 43.26,
+    "keyframes_count": 10,
+    "sparse_frames_count": 40,
+    "avg_keyframe_ms": 25.49,
+    "avg_sparse_frame_ms": 4.98
+  },
+  "class_comparison": {
+    "golden_counts": {
+      "car": 97,
+      "motorcycle": 64,
+      "person": 88,
+      "bicycle": 27,
+      "skateboard": 1
+    },
+    "sparse_counts": {
+      "car": 93,
+      "motorcycle": 70,
+      "person": 86,
+      "bicycle": 17
+    }
+  }
+}

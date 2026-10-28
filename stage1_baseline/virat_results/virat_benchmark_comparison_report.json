@@ -1,0 +1,47 @@
+{
+  "video": "VIRAT_S_000201_02_000590_000623.mp4",
+  "device": "NVIDIA RTX PRO 4000 Blackwell",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps_native": 30.0,
+  "total_frames_native": 981,
+  "baseline_30fps": {
+    "total_frames": 981,
+    "total_time_ms": 20233.36,
+    "per_frame_ms": 20.6,
+    "effective_fps": 48.48,
+    "peak_vram_mb": 394.69,
+    "total_boxes": 22764,
+    "class_counts": {
+      "car": 20898,
+      "person": 436,
+      "truck": 1430
+    }
+  },
+  "proposed_5fps_sparse": {
+    "evaluated_frames": 164,
+    "total_time_ms": 3089.66,
+    "per_frame_ms": 18.77,
+    "effective_fps": 53.08,
+    "peak_vram_mb": 483.34,
+    "mean_active_tokens": 590.4,
+    "mean_active_pct": 29.14,
+    "total_boxes": 3686,
+    "class_counts": {
+      "car": 3385,
+      "person": 61,
+      "truck": 240
+    }
+  },
+  "comparison_metrics": {
+    "recall": 0.9255,
+    "precision": 0.9574,
+    "f1_score": 0.9412,
+    "mean_matched_iou": 0.9857,
+    "end_to_end_speedup": 6.55,
+    "per_frame_speedup": 1.1,
+    "vram_reduction_pct": -22.46
+  }
+}

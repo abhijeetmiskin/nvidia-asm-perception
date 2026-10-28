@@ -1,0 +1,71 @@
+{
+  "analysis_meta": {
+    "video": "test_clip_10s.mp4",
+    "total_frames_sampled": 50,
+    "stride": 3,
+    "effective_fps": 5.0,
+    "total_patches_per_frame": 2025,
+    "timestamp": "2026-09-28 14:53:54"
+  },
+  "headline_findings": {
+    "mean_static_tokens_percentage": 91.97,
+    "mean_active_tokens_percentage": 8.03,
+    "mean_active_tokens_count": 162.6,
+    "mean_static_tokens_count": 1862.4,
+    "mean_token_cosine_similarity": 0.9772,
+    "tokens_with_cosine_sim_over_0_95_pct": 92.1,
+    "theoretical_attention_speedup_x": 164.4
+  },
+  "threshold_sensitivity": {
+    "0.015": {
+      "mean_active_tokens": 201.0612244897959,
+      "mean_static_tokens": 1823.938775510204,
+      "mean_static_percentage": 90.07105064247922,
+      "mean_active_percentage": 9.928949357520786,
+      "median_static_percentage": 90.12345679012346,
+      "min_static_percentage": 85.23456790123457,
+      "max_static_percentage": 92.74074074074073,
+      "mean_attention_speedup_x": 108.74399639230343
+    },
+    "0.025": {
+      "mean_active_tokens": 162.6122448979592,
+      "mean_static_tokens": 1862.3877551020407,
+      "mean_static_percentage": 91.96976568405141,
+      "mean_active_percentage": 8.0302343159486,
+      "median_static_percentage": 92.09876543209876,
+      "min_static_percentage": 89.28395061728395,
+      "max_static_percentage": 94.07407407407408,
+      "mean_attention_speedup_x": 164.35600091530526
+    },
+    "0.035": {
+      "mean_active_tokens": 141.87755102040816,
+      "mean_static_tokens": 1883.1224489795918,
+      "mean_static_percentage": 92.99370118417737,
+      "mean_active_percentage": 7.006298815822626,
+      "median_static_percentage": 92.98765432098766,
+      "min_static_percentage": 90.76543209876543,
+      "max_static_percentage": 94.91358024691358,
+      "mean_attention_speedup_x": 217.20276867429024
+    },
+    "0.05": {
+      "mean_active_tokens": 118.34693877551021,
+      "mean_static_tokens": 1906.6530612244899,
+      "mean_static_percentage": 94.15570672713528,
+      "mean_active_percentage": 5.8442932728647,
+      "median_static_percentage": 94.17283950617283,
+      "min_static_percentage": 91.90123456790124,
+      "max_static_percentage": 96.09876543209876,
+      "mean_attention_speedup_x": 322.7478667396381
+    },
+    "0.08": {
+      "mean_active_tokens": 85.44897959183673,
+      "mean_static_tokens": 1939.5510204081634,
+      "mean_static_percentage": 95.78029730410684,
+      "mean_active_percentage": 4.219702695893171,
+      "median_static_percentage": 95.65432098765432,
+      "min_static_percentage": 93.4320987654321,
+      "max_static_percentage": 97.82716049382717,
+      "mean_attention_speedup_x": 712.4105366708045
+    }
+  }
+}

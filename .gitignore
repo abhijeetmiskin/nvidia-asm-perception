@@ -1,0 +1,35 @@
+# Virtual environments
+.venv/
+*/.venv/
+env/
+venv/
+ENV/
+
+# Large Datasets (e.g. COCO 127k images)
+datasets/
+*/datasets/
+coco/
+
+# Training / intermediate runs
+runs/
+*/runs/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache directories
+.cache/
+*/.cache/
+.pytest_cache/
+
+# Package distributions
+*.egg-info/
+dist/
+build/
+
+# Operating System files
+.DS_Store
+Thumbs.db
